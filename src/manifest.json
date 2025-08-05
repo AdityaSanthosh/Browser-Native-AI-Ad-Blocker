@@ -1,0 +1,42 @@
+{
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "aditya@example.com"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Ad Blocker Config",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "*.wasm",
+        "*.mjs"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "description": "…",
+  "manifest_version": 3,
+  "name": "AI based Ad Blocker",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "unlimitedStorage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "version": "0.1"
+}

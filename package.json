@@ -1,0 +1,32 @@
+{
+  "name": "ai-firefox-ad-blocker",
+  "version": "1.0.0",
+  "description": "AI-powered ad blocker",
+  "type": "module",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ad-blocker",
+    "ai",
+    "firefox-extension"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/transformers": "^3.4.0",
+    "onnxruntime-web": "^1.22.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9",
+    "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^13.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "path-browserify": "^1.0.1",
+    "webpack": "^5.101.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
